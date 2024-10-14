@@ -1,0 +1,105 @@
+/* Style Global */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Wrapper untuk Form Login */
+.login-wrapper {
+    width: 350px;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #2d3436;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #636e72;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2d3436;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #74b9ff;
+    box-shadow: 0 0 8px rgba(116, 185, 255, 0.5);
+    outline: none;
+}
+
+/* Tombol Login */
+button.btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #0984e3, #74b9ff);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+button.btn:hover {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    transform: scale(1.02);
+}
+
+/* Link Daftar */
+.signup-link {
+    margin-top: 10px;
+    color: #2d3436;
+}
+
+.signup-link a {
+    color: #0984e3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
